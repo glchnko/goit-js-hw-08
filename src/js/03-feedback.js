@@ -30,10 +30,10 @@ function onSubmit(e){
  function onReload(){
     const saveData = localStorage.getItem("feedback-form-state")
     if(saveData){
-        let parseSaveData = JSON.parse(saveData);
-        console.log(parseSaveData);
-        refs.emailEl.value = parseSaveData.email;
-        refs.messegeEl.value = parseSaveData.textarea;
+        let parseSaveData = JSON.parse(saveData)
+        refs.emailEl.value = parseSaveData.email
+        refs.messegeEl.value = parseSaveData.textarea
+        console.log(parseSaveData)
     }
 
  }

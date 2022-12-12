@@ -13,8 +13,8 @@ function onPlay(e) {
 }
 
 const currentTime = localStorage.getItem(STORAGE_KEY)
-if (currentTime !== 0) {
-player.setCurrentTime(localStorage.getItem(STORAGE_KEY));
+if (currentTime) {
+player.setCurrentTime(currentTime);
 }
 
 

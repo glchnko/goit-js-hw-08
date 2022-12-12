@@ -23,7 +23,7 @@ function createGalleryMarcup (galleryItems) {
      ).join('');
 }
 
-const gallery = new SimpleLightbox('ul.gallery a', {
+const gallery = new SimpleLightbox('div.gallery a', {
   captionsData: 'alt',
   captionsDelay: '250'
 });

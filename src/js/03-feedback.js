@@ -15,7 +15,7 @@ function onInput(e){
     e.preventDefault();
     const data = {};
     data.email = refs.emailEl.value;
-    data.message = refs.messageEl.value;
+    data.textarea = refs.messageEl.value;
     localStorage.setItem("feedback-form-state", JSON.stringify(data));
 
 }
